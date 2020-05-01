@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* n可以是关键词，even是偶数，odd是奇数 */
+        /* ul li:nth-child(even) {
+            background-color: pink;
+        }
+        
+        ul li:nth-child(odd) {
+            background-color: plum;
+        } */
+        /* n可以是公式，n从0开始
+        2n是偶数
+        2n+1是奇数
+        5n是5的倍数，几的倍数就是几n
+        n+5是从第5个开始（包括第5个）到最后一个
+        -n+5前5个（包括第5个） 
+        第 0 个元素或者超出的元素的个数会被忽略掉 */
+        
+        ul li:nth-child(n) {
+            background-color: lightpink;
+        }
+        
+        ul li:nth-child(2n) {
+            background-color: pink;
+        }
+        
+        ul li:nth-child(2n+1) {
+            background-color: rosybrown;
+        }
+        
+        ul li:nth-child(5n) {
+            background-color: skyblue;
+        }
+        
+        ul li:nth-child(n+5) {
+            background-color: coral;
+        }
+        
+        ul li:nth-child(-n+5) {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+</body>
+
+</html>
